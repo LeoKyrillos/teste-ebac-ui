@@ -35,10 +35,24 @@
         "numero": "1",
         "pais": "Brasil",
         "estado": "Pernambuco",
-        "cidede": "Rrecife",
+        "cidede": "Recife",
         "cep": "52164815",
         "telefone": "789654862",
         "email":"teste2@teste.com"
+    },
+
+    {
+        "nome": "Roberto",
+        "sobrenome": "França",
+        "empresa": "D2L",
+        "endereco": "South Creek Dr",
+        "numero": "100",
+        "pais": "Canadá",
+        "estado": "Ontário",
+        "cidede": "Kitchener",
+        "cep": "N5G 2T3",
+        "telefone": "5698745160",
+        "email":"teste3@teste.com"
     }
 
 

@@ -1,4 +1,5 @@
 /// <reference types = "cypress" />
+
 import EnderecoPage from '../support/page-objects/endereco.page'
 const dadosEndereco = require('../fixtures/endereco.json')
 
@@ -36,6 +37,27 @@ describe('Funcionalidede Endereços - Faturamento e Entrega', () => {
             dadosEndereco[2].email            
             )
         cy.get('.woocommerce-message').should('contain', 'Endereço alterado com sucesso.')
+        
+    });
+
+    it.only('Deve fazer cadastro de entrega com sucesso - Usando arquivos de dados', () => {
+
+        EnderecoPage.editarEnderecoEntrega(
+            dadosEndereco[3].nome,
+            dadosEndereco[3].sobrenome,
+            dadosEndereco[3].empresa,
+            dadosEndereco[3].pais,
+            dadosEndereco[3].endereco,
+            dadosEndereco[3].numero,
+            dadosEndereco[3].cidede,
+            dadosEndereco[3].estado,
+            dadosEndereco[3].cep,
+            
+        )
+        cy.get('.woocommerce-message').should('contain', 'Endereço alterado com sucesso.')
+        
+
+
         
     });
 
