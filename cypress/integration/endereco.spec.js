@@ -40,7 +40,7 @@ describe('Funcionalidede Endereços - Faturamento e Entrega', () => {
         
     });
 
-    it.only('Deve fazer cadastro de entrega com sucesso - Usando arquivos de dados', () => {
+    it('Deve fazer cadastro de entrega com sucesso - Usando arquivos de dados', () => {
 
         EnderecoPage.editarEnderecoEntrega(
             dadosEndereco[3].nome,
