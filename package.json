@@ -8,7 +8,7 @@
     "cy:run": "npx cypress run --browser chrome",
     "cy:open": "npx cypress open",
     "cy:report": "cypress run --browser chrome --record --key aa868333-2131-428e-9425-cd3638678b24"
-    //eb18c929-c9b3-44ed-a1ac-3478dbe0cbf0
+    
   },
   "repository": {
     "type": "git",
