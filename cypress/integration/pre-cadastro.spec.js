@@ -9,7 +9,7 @@ describe('Funcionalidade Pré Cadastro', () => {
 
     });
     
-    it('Deve completar o pré cadastro com suceesso', () => {
+    it.only('Deve completar o pré cadastro com suceesso', () => {
 
         let nomeFaker = faker.name.firstName()
         let sobrenomeFaker = faker.name.lastName()
