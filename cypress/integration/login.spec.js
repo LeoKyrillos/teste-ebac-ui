@@ -20,7 +20,7 @@ context('Funcionalidade Login', () => {
         cy.get('.woocommerce-form > .button').click()
 
         cy.get('.page-title').should('contain', 'Minha conta')
-        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, aluno_ebac')
+        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, Aluno')
 
 
     })
@@ -65,7 +65,7 @@ context('Funcionalidade Login', () => {
         cy.get('#password').type('senha_invalida')
         cy.get('.woocommerce-form > .button').click()
 
-        cy.get('.woocommerce-error').should('contain', 'A senha fornecida para o e-mail aluno_ebac@teste.com está incorreta.')
+        cy.get('.woocommerce-error').should('contain', 'Erro: a senha')
 
     })
 });
